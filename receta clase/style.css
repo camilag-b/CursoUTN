@@ -1,0 +1,21 @@
+<!-- CSS-->
+body{
+    background-color: cadetblue;
+    color: black;
+   }
+
+.titulodelareceta{
+   background: black;
+    text-align: center;
+    color:cadetblue;
+}
+
+.ingredientes{
+    text-align: center;
+}
+
+.pasos{
+    text-align: center;
+}
+
+    
