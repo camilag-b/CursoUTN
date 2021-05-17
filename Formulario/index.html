@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+
+</head>
+<body>
+    <section class="principal">
+        <h2>Contact form</h2>
+        <p>Please fill in your information and we'll be sending your order in no time</p>
+        <form action="mailto:mailfalsonoticias123@gmail.com" method="POST" id="formcontacto">
+            <!-- aca va nombre, email, localidad, genero, suscripción, mensaje, btn-envio-->
+        <div>
+        <span>Your name</span>
+        <input type="text" name="nombre" required placeholder="First name">
+        <input type="text" name= apellido required placeholder="Last name">
+        </div>
+        <br>
+        <div>
+            <label>
+                <span>Your email</span>
+                <input type="email"
+                name="email" required placeholder="e.g. hello@contact.net">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                <span>Phone</span>
+                <input type="tel"
+                name="number"  maxlength="4" required placeholder="####">
+                <input type="tel"
+                name="number" maxlength="4" required placeholder="####">
+                <input type="tel"
+                name="number" maxlength="4"  required placeholder="####">
+            </label>
+        </div>
+       
+  <br>
+
+  <div>
+       <span>Message subject</span>
+       <select name="Tipo de mensaje">
+        <option value="Seleccione"></option>
+        <option value="01">Payments</option>
+        <option value="02">Technical problems</option>
+        <option value="03">Others</option>   
+    </select>
+
+   </div>
+<p></p>
+  <div>
+  <label>
+    <span>Message</span>
+    <textarea name="mensaje"
+    required placeholder=""></textarea>
+</label>
+</div>
+<p></p>
+<div>
+    <label>
+        <span>
+            Verification </span>
+            <div class="g-recaptcha" data-sitekey="Clave del sitio"></div>
+           
+    </label>
+
+    <hr>
+    
+<p></p>
+</div>
+
+   
+        <!--click para envio-->
+        <input type="submit" name="envio"
+        value="Enviar">
+
+     </form>
+    </section>
+</body>
+</html>
