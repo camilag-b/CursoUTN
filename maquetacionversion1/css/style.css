@@ -1,0 +1,164 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body,h1{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*Inicio */
+
+#contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .header{
+        background:#5271ff;
+        text-align: center;
+        color: white;
+        padding: 5px;
+        /*height: 60px*/
+        margin-bottom: 10px;
+        }
+    .logo{
+        display:table-cell;
+        text-align:center;
+        vertical-align:center;  
+        margin: 10px;
+        }
+    .header img {
+        max-height:10%;
+        min-height: 10%;
+        width:50%;
+        margin-left: 95%;
+        vertical-align: middle;
+
+    }
+    .navbar{
+        background:black;
+        text-align: right;
+        text-transform: uppercase;
+        padding: 10px;
+        
+    }
+    
+    
+    .navbar ul{
+        list-style-type: none;
+        }
+        .navbar ul li{
+            /* float:left; */
+            display: inline;
+            }
+            .navbar ul li a{
+                color:white;
+                text-decoration: none;
+                padding: 10px;
+            }
+            /* pseudo-clase -> :*/
+            .navbar ul li a:hover{
+                /* color:blue; */
+                /* background-color: white; */
+                border: 2px solid white;
+                border-radius: 8px;
+            }
+            .navbar ul li a:active{
+                background-color: white;
+                color:blue;
+            }
+            /* pseudo-elemento -> ::*/
+            .navbar ul li a::before{
+                content:"";
+            }
+
+        
+     /*NOTICIAS*/
+
+    .principal{
+        background:#a2b2f8;
+        padding: 15px;
+        border:10px solid #5271ff; 
+        width:68%; 
+        float:left; 
+     }
+     .destacado{
+         padding: 15px;
+         background-color: rgb(58, 56, 56);
+         margin-bottom: 10px;
+     }
+     .destacado img{
+         width: 100%;
+     }
+     .destacado h2{
+         text-align: center;
+         transform: translateY(-60px);
+         margin: 0;
+         color:rgb(253, 253, 253);
+         text-decoration:underline;
+     }
+
+     .simple{
+         padding: 15px;
+         background-color: white;
+         width: 50%;
+         float: left;
+     }
+     figure{
+         margin:0;
+     }
+     /* Selector por anidaciones */
+     .simple figure img{
+         width:100%;
+        
+     }
+     /* .destacado p{
+         color:red
+     } */
+
+
+
+     /*Noticia Simple*/
+
+     .breadcrumb{
+         padding:10px;
+         background-color: black;
+         border-radius: 5px;
+         margin-bottom: 30px;
+     }
+     .noticia{
+        background-color:rgb(192, 230, 255);
+        padding:10px;
+     }
+     .noticia figure img{
+        width:100%
+     }
+     .banner img{
+        width:100%
+     }
+
+
+
+
+    .sidebar{ /*<aside>*/
+        width: 30%;
+        background: rgb(58, 56, 56);
+        height: 300px;
+        float:right; /*flota a der*/
+    }
+    .footer{
+        clear:both; /*para cortar con la incidencia de los float, debemos limpiar con clear*/
+        background:#000000;
+        text-align: center;
+        color:white;
+        padding: 15px;
+    }
+
+    .limpiar{
+        clear:both;
+    }
