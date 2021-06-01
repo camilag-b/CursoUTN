@@ -1,0 +1,73 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-image: url(./imagenes/fondo.jpg);
+}
+
+body,h1{
+    margin: 0;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*Inicio */
+div { color: white;
+
+}
+#contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+
+    .principal{
+        background:none;
+        padding: 15px;
+        border:15px none; 
+        width: 40%; 
+        float:left; 
+        margin-left: 10%;
+        
+    }
+    span{
+        padding-right: 5%;
+    }    
+    input{
+        border-style: hidden;
+        border-width: none;
+        border-color: none;
+        width: fit-content;
+    }
+
+    
+    option{
+        border-style: hidden;
+        border-radius: 3px;
+        border-width: none;
+        border-color: none;
+    }
+
+    select{
+        border-style: hidden;
+        border-width: none;
+        border-color: none;
+        
+    }
+
+    textarea{
+        border-style: hidden;
+        border-radius: 3px;
+        border-width: none;
+        border-color: none;
+        object-fit: contain;
+    }
+   
+    
+
+    .limpiar{
+        clear:both;
+    }
